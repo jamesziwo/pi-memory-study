@@ -19,6 +19,7 @@ import {
 import { flushWritebackJournal, readWritebackJournal, stageAppendMemory } from "./writeback.ts";
 
 export interface MemoryState {
+  // 中文：会话开关，在从 --no-memory 标志解析前为 undefined。
   /** Session toggle; undefined until resolved from the --no-memory flag. */
   enabled: boolean | undefined;
 }

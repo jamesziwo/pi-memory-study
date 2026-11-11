@@ -23,10 +23,13 @@ export interface WritebackOperation {
 
 export interface FlushResult {
   path: string;
+  // 中文：本次 flush 新提交的操作。
   /** Operations newly committed by this flush call. */
   committed: WritebackOperation[];
+  // 中文：本次 flush 新拒绝的操作。
   /** Operations newly rejected by this flush call. */
   rejected: WritebackOperation[];
+  // 中文：本次 flush 有意保留为待处理的操作。
   /** Operations intentionally left pending by this flush call. */
   pending: WritebackOperation[];
   faults: MemoryFault[];

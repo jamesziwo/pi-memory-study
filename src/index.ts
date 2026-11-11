@@ -61,6 +61,7 @@ function safeFlush(dir: string, scope: "global" | "project", config: ReturnType<
   try {
     flushWritebackJournal(dir, scope, config);
   } catch {
+    // 中文：生命周期钩子绝不能导致外层 pi 会话失败。
     // Lifecycle hooks should never fail the surrounding pi session.
   }
 }

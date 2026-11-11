@@ -27,6 +27,8 @@ interface ScopedPages {
   source: PageSource;
 }
 
+// 中文：构建 pi 提示注入的记忆块。启用 ClawVM 页表注入且至少一个有效页可用时，渲染确定性的常驻集合；否则回退到原始有上限的 MEMORY.md 块，保留 v1
+// 行为。
 /**
  * Build the memory block used by pi prompt injection.
  *

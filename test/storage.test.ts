@@ -41,6 +41,7 @@ test("capContent enforces the byte cap at line boundaries", () => {
 });
 
 test("capContent never splits multi-byte characters", () => {
+  // 中文：第一行按 UTF-8 编码为 10 字节。
   const raw = "ééééé\nxxxxx"; // first line is 10 bytes in UTF-8
   const result = capContent(raw, { maxInjectLines: 100, maxInjectBytes: 12 });
   assert.equal(result.content, "ééééé");

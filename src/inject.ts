@@ -3,6 +3,7 @@ import type { IndexSnapshot } from "./storage.ts";
 
 export interface InjectOptions {
   globalDir: string;
+  // 中文：项目未受信时为 undefined，此时完全省略项目作用域。
   /** Undefined when the project is untrusted: the scope is then fully omitted. */
   projectDir?: string;
   globalIndex?: IndexSnapshot;
@@ -20,6 +21,7 @@ function section(title: string, dir: string, index: IndexSnapshot | undefined): 
   return `${header}\n\n${index.content.trimEnd()}${note}`;
 }
 
+// 中文：构建追加到系统提示的记忆块；输入不变时结果确定，以保持提供方提示缓存命中。
 /**
  * Build the memory block appended to the system prompt. Deterministic for
  * unchanged inputs so the provider prompt cache stays warm.

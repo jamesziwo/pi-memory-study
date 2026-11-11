@@ -3,18 +3,25 @@ import { homedir } from "node:os";
 import { join } from "node:path";
 
 export interface MemoryConfig {
+  // 中文：总开关，可从任一作用域的 config.json 设置。
   /** Master switch, settable from config.json in either scope. */
   enabled: boolean;
+  // 中文：每个作用域最多注入的 MEMORY.md 行数。
   /** Max lines of MEMORY.md injected per scope. */
   maxInjectLines: number;
+  // 中文：每个作用域最多注入的 MEMORY.md 字节数。
   /** Max bytes of MEMORY.md injected per scope. */
   maxInjectBytes: number;
+  // 中文：存在有效页表时，使用 ClawVM 风格常驻集合注入。
   /** Use ClawVM-style resident-set injection when a valid page table exists. */
   pageTableInjection: boolean;
+  // 中文：选中页面表示的提示 token 预算。
   /** Prompt-token budget for selected page representations. */
   maxMemoryTokens: number;
+  // 中文：以 JSONL 持久化常驻／写回决策和故障轨迹。
   /** Persist JSONL traces for residency/writeback decisions and faults. */
   traceEnabled: boolean;
+  // 中文：拒绝不安全或破坏性写回操作，而非尽力尝试写入。
   /** Reject unsafe/destructive writeback operations instead of best-effort writing. */
   strictWriteback: boolean;
 }
@@ -29,9 +36,11 @@ export const DEFAULT_CONFIG: MemoryConfig = {
   strictWriteback: true,
 };
 
+// 中文：对 MEMORY.md 索引文件的一次有上限读取。
 /** A capped read of a MEMORY.md index file. */
 export interface IndexSnapshot {
   path: string;
+  // 中文：内容不超过行数／字节上限，并在行边界截断。
   /** Content up to the line/byte caps, cut at line boundaries. */
   content: string;
   truncated: boolean;
@@ -48,6 +57,7 @@ export function projectMemoryDir(cwd: string): string {
   return join(cwd, ".pi", "memory");
 }
 
+// 中文：在 maxInjectLines 或 maxInjectBytes 任一先达到时限制内容，只在行边界截断，确保不拆开多字节字符。
 /**
  * Cap content at whichever of maxInjectLines/maxInjectBytes is hit first,
  * cutting only at line boundaries so multi-byte characters are never split.
@@ -84,6 +94,7 @@ export function createIndexCache(): IndexCache {
   return new Map();
 }
 
+// 中文：读取并截断 MEMORY.md 索引。文件不存在或不可读时返回 undefined；以 mtime+size 缓存结果，所以常见情况下每次提示只需 stat()。
 /**
  * Read and cap a MEMORY.md index. Returns undefined when the file does not
  * exist (or is unreadable). Results are cached by mtime+size so the per-prompt
@@ -140,6 +151,7 @@ export function readIndex(
   return snapshot;
 }
 
+// 中文：先加载全局目录 config.json，再加载项目目录（如果提供）；项目键覆盖全局键，与 pi 设置合并方式一致。缺失或无效文件忽略。
 /**
  * Load config.json from the global dir, then the project dir (when given),
  * with project keys overriding global keys — mirroring pi's settings merge.
@@ -181,6 +193,7 @@ export interface MemoryFile {
   bytes: number;
 }
 
+// 中文：列出记忆目录顶层 Markdown 文件，不包含 archive/。
 /** List markdown files in a memory dir (top level; archive/ excluded). */
 export function listMemoryFiles(dir: string): MemoryFile[] {
   let entries;
@@ -195,6 +208,7 @@ export function listMemoryFiles(dir: string): MemoryFile[] {
     try {
       files.push({ name: entry.name, bytes: statSync(join(dir, entry.name)).size });
     } catch {
+      // 中文：文件在 readdir 与 stat 之间消失，跳过。
       // file vanished between readdir and stat; skip
     }
   }

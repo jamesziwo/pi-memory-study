@@ -48,6 +48,8 @@ const TYPE_UTILITY: Record<PageType, number> = {
   conversation_segment: 120,
 };
 
+// 中文：确定性的 ClawVM 风格常驻集合选择。第一阶段以最低保真度装入强制固定页及当前轮需求页；第二阶段按每 token 边际效用贪心装入可选页或升级选中页。刻意保持纯
+// 函数，提示热路径不发生文件、网络或模型调用。
 /**
  * Deterministic ClawVM-style resident-set selection.
  *
