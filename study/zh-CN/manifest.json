@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "purpose": "read-only Chinese study mirror; not executable skills",
+  "files": [
+    {
+      "source": "README.md",
+      "translation": "study/zh-CN/README.md",
+      "sourceCommit": "d32ebc625797f6cce4d8dd4ba6a03b1fdbe3bb83",
+      "sourceSha256": "572187839f0bddb46b236e7d07220ce159c6d6ad4f2e1f65ef1cc0636ff95d78",
+      "title": "pi-memory",
+      "translatedUnits": 24
+    }
+  ]
+}
