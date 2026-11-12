@@ -5,7 +5,7 @@
 <a id="requirements-clawvm-style-memory-management-for-pi"></a>
 # 需求：面向 Pi 的 ClawVM 风格记忆管理
 
-状态：未来 `pi-memory`/Pi 集成的需求草案。依据 ClawVM 论文及[相关阅读列表](../../../docs/research/05-agent-harness-memory-papers.md)，不表示所有要求都必须纳入 pi-memory v1。
+状态：未来 `pi-memory`/Pi 集成的需求草案。依据 ClawVM 论文及[相关阅读列表](research/05-agent-harness-memory-papers.md)，不表示所有要求都必须纳入 pi-memory v1。
 
 <a id="1-purpose"></a>
 ## 1. 目的

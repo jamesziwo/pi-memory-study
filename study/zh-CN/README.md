@@ -9,7 +9,7 @@
 
 为 [pi](https://pi.dev) 编程智能体提供基于文件的持久记忆。智能体跨会话积累长期有效的经验（纠正、构建命令、决策和偏好），以可阅读、编辑和比较差异的纯 Markdown 保存。
 
-设计依据与研究：[docs/design.md](../../docs/design.md)、[docs/research/](../../docs/research/)。
+设计依据与研究：[docs/design.md](docs/design.md)、[docs/research/](docs/research/README.md)。
 
 <a id="how-it-works"></a>
 ## 工作原理

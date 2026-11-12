@@ -14,11 +14,11 @@
 
 | 文件 | 内容 |
 |---|---|
-| [01-agent-memory-survey.md](../../../../docs/research/01-agent-memory-survey.md) | 种子论文 arXiv 2512.13564：分类体系、写入策略陷阱和衰减机制 |
-| [02-pi-extension-api.md](../../../../docs/research/02-pi-extension-api.md) | Pi 扩展 API、生命周期事件、持久化原语、目录及作用域约定 |
-| [03-prior-art.md](../../../../docs/research/03-prior-art.md) | Claude Code 双层记忆、Codex/Cursor/Aider 约定、MemGPT/Mem0 经验 |
-| [04-pi-api-details.md](../../../../docs/research/04-pi-api-details.md) | 从完整 pi-mono 文档补齐 API 签名、压缩内部机制、打包和技能信息 |
-| [05-agent-harness-memory-papers.md](../../../../docs/research/05-agent-harness-memory-papers.md) | harness 管理记忆、检索控制、记忆基准和编排的 arXiv 阅读列表 |
+| [01-agent-memory-survey.md](01-agent-memory-survey.md) | 种子论文 arXiv 2512.13564：分类体系、写入策略陷阱和衰减机制 |
+| [02-pi-extension-api.md](02-pi-extension-api.md) | Pi 扩展 API、生命周期事件、持久化原语、目录及作用域约定 |
+| [03-prior-art.md](03-prior-art.md) | Claude Code 双层记忆、Codex/Cursor/Aider 约定、MemGPT/Mem0 经验 |
+| [04-pi-api-details.md](04-pi-api-details.md) | 从完整 pi-mono 文档补齐 API 签名、压缩内部机制、打包和技能信息 |
+| [05-agent-harness-memory-papers.md](05-agent-harness-memory-papers.md) | harness 管理记忆、检索控制、记忆基准和编排的 arXiv 阅读列表 |
 
 <a id="synthesis--what-the-research-supports"></a>
 ## 综合结论：研究支持什么

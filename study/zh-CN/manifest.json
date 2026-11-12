@@ -41,6 +41,54 @@
       "sourceSha256": "9ff84a2ae36a36cb10b01a02a3c9cd8b1f2bb88b696aff33f2713245308652b6",
       "title": "ClawVM 记忆管理需求",
       "translatedUnits": 41
+    },
+    {
+      "source": "docs/research/01-agent-memory-survey.md",
+      "translation": "study/zh-CN/docs/research/01-agent-memory-survey.md",
+      "sourceCommit": "f648576f1912a64c9be754fe9e3882fdd1c24da8",
+      "sourceSha256": "e80fed29999b38ec0b77c8c875a350bf9dc27b3ba8d40291e360c261e4ece95b",
+      "title": "智能体记忆综述",
+      "translatedUnits": 8
+    },
+    {
+      "source": "docs/research/02-pi-extension-api.md",
+      "translation": "study/zh-CN/docs/research/02-pi-extension-api.md",
+      "sourceCommit": "f648576f1912a64c9be754fe9e3882fdd1c24da8",
+      "sourceSha256": "6e3214a19ab93c7fe0f9ca2c9ed544497695af8b91f3cc44ab459904bfd8a641",
+      "title": "Pi 扩展 API 与目录约定",
+      "translatedUnits": 11
+    },
+    {
+      "source": "docs/research/03-prior-art.md",
+      "translation": "study/zh-CN/docs/research/03-prior-art.md",
+      "sourceCommit": "f648576f1912a64c9be754fe9e3882fdd1c24da8",
+      "sourceSha256": "3ce046d0b46c3f1e86574c4b3d8eba365b37734fe3c6ac744739fc23cb031476",
+      "title": "现有记忆方案",
+      "translatedUnits": 10
+    },
+    {
+      "source": "docs/research/04-pi-api-details.md",
+      "translation": "study/zh-CN/docs/research/04-pi-api-details.md",
+      "sourceCommit": "f648576f1912a64c9be754fe9e3882fdd1c24da8",
+      "sourceSha256": "63f2c99fe16cc4010d041392b4c9be621dac3b7ebfaa0c55f13bf538e9bc6c18",
+      "title": "Pi API 细节",
+      "translatedUnits": 9
+    },
+    {
+      "source": "docs/research/05-agent-harness-memory-papers.md",
+      "translation": "study/zh-CN/docs/research/05-agent-harness-memory-papers.md",
+      "sourceCommit": "f648576f1912a64c9be754fe9e3882fdd1c24da8",
+      "sourceSha256": "c3767d751dd3e45d9814ae3e9e0779399adc477842a9c670ab4b4c508021511c",
+      "title": "Harness 记忆论文列表",
+      "translatedUnits": 6
+    },
+    {
+      "source": ".pi/memory/MEMORY.md",
+      "translation": "study/zh-CN/.pi/memory/MEMORY.md",
+      "sourceCommit": "f648576f1912a64c9be754fe9e3882fdd1c24da8",
+      "sourceSha256": "a9684c992c721dd3e762c17cdf928194c29e155a43a16c58fb4c50cf83ac90b9",
+      "title": "项目记忆索引",
+      "translatedUnits": 1
     }
   ]
 }
