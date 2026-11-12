@@ -1,3 +1,5 @@
+// 中文：ClawVM 风格记忆的领域术语。预期数据流为：MEMORY.md 列表项 → 带类型的 MemoryPage 记录 → page-table.jsonl → 后续
+// 提示词驻留、召回、回写及故障追踪。该文件应以声明为主，使后续智能体能先理解记忆模型，再阅读解析、持久化或命令代码。
 /**
  * Domain vocabulary for ClawVM-style memory.
  *
@@ -130,6 +132,7 @@ export function bestAvailableRepresentation(
   return undefined;
 }
 
+// 中文：低成本的确定性估算，仅用于预算和摘要。
 /** Cheap deterministic estimate used only for budgeting and summaries. */
 export function estimateTokens(text: string): number {
   const trimmed = text.trim();

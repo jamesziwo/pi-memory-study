@@ -145,6 +145,7 @@ function rotateTraceFiles(dir: string): void {
     try {
       unlinkSync(join(dir, file.name));
     } catch {
+      // 中文：尽力轮转；清理失败不得阻止记忆注入。
       // Best-effort rotation; failed cleanup must not block memory injection.
     }
   }

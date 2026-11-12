@@ -9,6 +9,30 @@
       "sourceSha256": "572187839f0bddb46b236e7d07220ce159c6d6ad4f2e1f65ef1cc0636ff95d78",
       "title": "pi-memory",
       "translatedUnits": 24
+    },
+    {
+      "source": "docs/design.md",
+      "translation": "study/zh-CN/docs/design.md",
+      "sourceCommit": "8264fdabc7f6a9620daec04082012c2e6150c0f7",
+      "sourceSha256": "8c8401a11a15b8a868fb738b64ce8f1656a3110f54cc29d38f6c21551e149a51",
+      "title": "设计说明",
+      "translatedUnits": 12
+    },
+    {
+      "source": "docs/memory-effectiveness-testing.md",
+      "translation": "study/zh-CN/docs/memory-effectiveness-testing.md",
+      "sourceCommit": "8264fdabc7f6a9620daec04082012c2e6150c0f7",
+      "sourceSha256": "33328955040fd8f3715e9c5aab9ac04f9bcdaafda96fd8bd9b54b590c9a7fd86",
+      "title": "记忆效果测试",
+      "translatedUnits": 6
+    },
+    {
+      "source": "docs/research/README.md",
+      "translation": "study/zh-CN/docs/research/README.md",
+      "sourceCommit": "8264fdabc7f6a9620daec04082012c2e6150c0f7",
+      "sourceSha256": "4e206eff9aabb7836e80b3455411b295357c2b1bc735ab80407ad73bafca1ef0",
+      "title": "研究索引",
+      "translatedUnits": 5
     }
   ]
 }

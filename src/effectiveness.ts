@@ -2,12 +2,16 @@ import type { MemoryFault } from "./memory-domain.ts";
 import type { ResidencyDecision } from "./residency.ts";
 
 export interface MemoryEffectivenessExpectations {
+  // 中文：任务正确使用记忆所必需的常驻页面。
   /** Pages that must be resident for the task to use memory correctly. */
   neededPageIds?: Iterable<string>;
+  // 中文：选中后其 token 可计为有效记忆上下文的页面。
   /** Pages whose selected tokens count as useful memory context. */
   relevantPageIds?: Iterable<string>;
+  // 中文：预期在饱和压力下仍应保留的硬固定或活跃固定页面。
   /** Hard or active pages expected to survive saturation pressure. */
   pinnedPageIds?: Iterable<string>;
+  // 中文：不变量页面所需的最低保真度 token 总量。
   /** Total minimum-fidelity tokens required by invariant pages. */
   minimumRequiredTokens?: number;
 }
@@ -35,6 +39,7 @@ const POLICY_CONTROLLABLE_FAULTS = new Set<MemoryFault["type"]>([
   "invariant_pressure",
 ]);
 
+// 中文：使用与智能体黑盒评估相同的高层类别——利用率、饱和度和错误——为确定性的记忆策略决策评分。这使测试保持精简，也为后续智能体提供可在回放夹具中复用的稳定指标名称。
 /**
  * Score a deterministic memory-policy decision using the same high-level
  * categories we use for black-box agent evaluation: utilization, saturation,

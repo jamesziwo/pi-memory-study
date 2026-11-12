@@ -68,6 +68,7 @@ export function writePageTable(dir: string, pages: MemoryPage[]): PageTableWrite
   mkdirSync(dir, { recursive: true });
   const path = pageTablePath(dir);
   const tmpPath = `${path}.${process.pid}.tmp`;
+  // 中文：稳定的键顺序使用户和智能体更容易比较 JSONL 辅助文件的差异。
   // Stable key order makes JSONL sidecars easier for users and agents to diff.
   const body = pages.map(serializePage).join("\n");
   writeFileSync(tmpPath, body.length > 0 ? `${body}\n` : "");
