@@ -10,5 +10,6 @@
 |---|---|---|
 | `README.md` | [pi-memory](README.md) | [原文](../../README.md) |
 | `docs/design.md` | [设计说明](docs/design.md) | [原文](../../docs/design.md) |
+| `docs/clawvm-requirements.md` | [ClawVM 记忆管理需求](docs/clawvm-requirements.md) | [原文](../../docs/clawvm-requirements.md) |
 | `docs/memory-effectiveness-testing.md` | [记忆效果测试](docs/memory-effectiveness-testing.md) | [原文](../../docs/memory-effectiveness-testing.md) |
 | `docs/research/README.md` | [研究索引](docs/research/README.md) | [原文](../../docs/research/README.md) |

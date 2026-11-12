@@ -33,6 +33,14 @@
       "sourceSha256": "4e206eff9aabb7836e80b3455411b295357c2b1bc735ab80407ad73bafca1ef0",
       "title": "研究索引",
       "translatedUnits": 5
+    },
+    {
+      "source": "docs/clawvm-requirements.md",
+      "translation": "study/zh-CN/docs/clawvm-requirements.md",
+      "sourceCommit": "4fc989087b473aeeb6923f904fe7dba475345a73",
+      "sourceSha256": "9ff84a2ae36a36cb10b01a02a3c9cd8b1f2bb88b696aff33f2713245308652b6",
+      "title": "ClawVM 记忆管理需求",
+      "translatedUnits": 41
     }
   ]
 }
